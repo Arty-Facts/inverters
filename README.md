@@ -18,4 +18,4 @@ pip install inverters
 
 ## License
 
-`inverters` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+`inverters` is distributed under the terms of the [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) license.
