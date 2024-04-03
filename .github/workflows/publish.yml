@@ -8,9 +8,6 @@ on:
 permissions:
   contents: read
 
-env:
-  HATCH_INDEX_AUTH: ${{ secrets.HATCH_INDEX_AUTH }}
-  HATCH_INDEX_USER: ${{ secrets.HATCH_INDEX_USER }}
 
 jobs:
   deploy:
@@ -37,5 +34,8 @@ jobs:
     - name: Test package
       run: hatch run test
     - name: Publish package distributions to PyPI
+      env:
+        HATCH_INDEX_AUTH: ${{ secrets.HATCH_INDEX_AUTH }}
+        HATCH_INDEX_USER: ${{ secrets.HATCH_INDEX_USER }}
       run: hatch publish --user $HATCH_INDEX_USER --auth $HATCH_INDEX_AUTH
       
