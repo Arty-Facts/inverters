@@ -12,6 +12,7 @@ license = "apache-2.0"
 keywords = []
 authors = [
   { name = "Arturas Aleksandraus", email = "arturas@aleksandraus.se" },
+  { name = "Nithesh Chandher Karthikeyan", email = "nithesh.chandher.karthikeyan@liu.se" },
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
