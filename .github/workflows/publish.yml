@@ -37,5 +37,5 @@ jobs:
     - name: Test package
       run: hatch run test
     - name: Publish package distributions to PyPI
-      run: hatch publish
+      run: hatch publish --username $HATCH_INDEX_USER --password $HATCH_INDEX_AUTH
       
